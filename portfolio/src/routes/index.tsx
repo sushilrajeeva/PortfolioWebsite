@@ -11,11 +11,13 @@ function Routes() {
         <header >
           <Navigation />
         </header>
-        <AppRoutes>
-          <Route path="/" element={<Landing />} />
-          
-          <Route path="/*" element={<Error404Page />}></Route>
-        </AppRoutes>
+        <body>
+          <AppRoutes>
+            <Route path="/" element={<Landing />} />
+            
+            <Route path="/*" element={<Error404Page />}></Route>
+          </AppRoutes>
+        </body>
       </div>
     </ThemeProvider>
   );
