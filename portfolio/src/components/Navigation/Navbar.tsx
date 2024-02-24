@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
-
+import { Link } from 'react-router-dom';
 
 import { Icons } from "@/components/ui/icons"
 
 import { ModeToggle } from "../mode-toggle";
+
 
 const Navbar = () => {
   
@@ -27,10 +28,18 @@ const Navbar = () => {
       </div>
 
       <div className="ml-auto">
-        <ModeToggle /> {/* Add ModeToggle here */}
+        {/* <Link to="https://github.com/sushilrajeeva">
+            <Icons.gitHub className="mr-2 h-4 w-4" />
+        </Link> */}
+        <a href="https://github.com/sushilrajeeva" target="_blank" rel="noopener noreferrer">
+            <Icons.gitHub className="mr-2 h-4 w-4" />
+        </a>
+
+        
+        
       </div>
-      <div className="p-2">
-        <Icons.gitHub className="mr-2 h-4 w-4" />
+      <div className="">
+        <ModeToggle /> {/* Add ModeToggle here */}
       </div>
     </nav>
     //   </div>

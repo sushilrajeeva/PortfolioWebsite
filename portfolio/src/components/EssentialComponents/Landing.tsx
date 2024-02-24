@@ -1,7 +1,9 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Spotlight } from "@/components/ui/Spotlight";
-import waivingImg from '@/assets/images/waiving.png'; // Ensure the path is correct
+import waivingImg from '@/assets/images/waiving.png';
+import CodingImg from '@/assets/images/laptop.png'; 
+
 
 function Landing() {
   return (
@@ -19,7 +21,10 @@ function Landing() {
             A Software Engineer with focus on Full stack, ML, Cloud and Web 3.0, specialized in turning concepts into digital reality...
           </p>
           <div className="mt-8 space-x-4">
-            <Button variant="outline">See my resume</Button>
+            <a href="https://docs.google.com/document/d/1dCm-rdKps3b9w5pHhWAs0Pw7Il00Ua4kRwD0M1iJUv0/edit" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline">See my resume</Button>
+             </a>
+            
             <Button>Get in touch</Button>
           </div>
         </div>
